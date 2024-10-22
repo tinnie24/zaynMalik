@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #1A73E8;
+    text-transform: uppercase;
+}
+
+/* Profile Section */
+.header {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #1A73E8; /* Dark blue color */
+    text-transform: uppercase;
+}
+
+.profile-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.imgBx {
+    width: 100px; /* Set specific width */
+    height: 100px; /* Set specific height */
+    overflow: hidden; /* Ensure image stays within bounds */
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.imgBx img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content */
+.content {
+    flex: 1;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-info div {
+    margin-bottom: 10px;
+}
+
+.contact-info strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Section Styles (Skills, Languages, Experience, Education) */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Skills, Achievements, Extracurricular */
+.skills ul, .languages ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+ .skills li, .achievements li, .extracurricular li {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #ddd;
+    }
+    
+
+/* Progress Bars for Skills */
+.progress-bar {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #2196F3;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* Work Experience and Education */
+.work-experience, .education {
+    margin-bottom: 30px;
+}
+
+.work-experience h5, .education h5 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.work-experience h6, .education h6 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #2196F3;
+}
+
+footer a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgBx {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skills ul, .languages ul {
+        grid-template-columns: 1fr;
+    }
+}
